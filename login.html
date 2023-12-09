@@ -20,7 +20,7 @@
         </div>
 
         <!-- formulario de registrar -->
-        <div class="container" method="get" id="loginForm"> 
+        <div class="container"  id="loginForm"> 
                 <div  class="google">
                     <button class="btn">
                     <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
@@ -33,41 +33,36 @@
                     </button>
                 </div>
 
-                    <div class="formulario">      
-                        <form action="">
-                            <div class="email">
-                                <label for="email">Email</label>
-                                <input class="input" type="email" name="email" value="" id="email" required placeholder="123@gmail.com">
+                <form action="" class="formulario" method="get">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input class="input" type="email" name="email" value="" id="email" required placeholder="123@gmail.com">
+                    </div>
+                        <div class="container-input">
+                        <label for="password">contraseña</label>
+                        <input  class="input" type="password" id="password" required placeholder="Ingresar contraseña"/>
+                    </div>
+                    <div class="checkbox">
+                        <label
+                        ><input type="checkbox" id="cbox1" value="first_checkbox"/> Recordar contraseña</label>
+                    </div>
+                    <div class="into">
+                        <button class="get-into"  type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M8.5 16V14.2222H14.7222V1.77778H8.5V0H16.5V16H8.5ZM6.72222 12.4444L5.5 11.1556L7.76667 8.88889H0.5V7.11111H7.76667L5.5 4.84444L6.72222 3.55556L11.1667 8L6.72222 12.4444Z" fill="black"/>
+                            </svg></span>
+                            <span class="button-text">Ingresar</span>
+                        </button>
+                </form>
+                        <div class="footer">   
+                            <div class="recover">
+                                <a href="">Olvidaste tu contraseña?</a>
                             </div>
-                                <div class="container-input">
-                                <label for="password">contraseña</label>
-                                <input  class="input" type="password" id="password" required placeholder="Ingresar contraseña"/>
+                            <div>
+                                <button class="register">Registrar</button>
                             </div>
-                            <div class="checkbox">
-                                <label
-                                ><input type="checkbox" id="cbox1" value="first_checkbox"/> Recordar contraseña</label>
-                            </div>
-                            <div class="into">
-                                <button class="get-into"  type="submit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                                        <path d="M8.5 16V14.2222H14.7222V1.77778H8.5V0H16.5V16H8.5ZM6.72222 12.4444L5.5 11.1556L7.76667 8.88889H0.5V7.11111H7.76667L5.5 4.84444L6.72222 3.55556L11.1667 8L6.72222 12.4444Z" fill="black"/>
-                                    </svg></span>
-                                    <span class="button-text">Ingresar</span>
-                                </button>
-                        </form>
-                    </div>     
-        </div>
-<!-- Fin del formulario -->
-
-<!-- olvidaste tu contraseña y registrar -->
-             <div class="footer">   
-                <div class="recover">
-                    <a href="">Olvidaste tu contraseña?</a>
-                </div>
-                <div>
-                    <button class="register">Registrar</button>
-                </div>
-             </div>   
+                        </div>  
+            </div>
     </main>   
 </body>
 </html>
